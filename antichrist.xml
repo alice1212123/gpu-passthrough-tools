@@ -257,14 +257,14 @@
       <address type="pci" domain="0x0000" bus="0x07" slot="0x00" function="0x0"/>
     </rng>
   </devices>
-  <qemu:commandline>
-    <qemu:arg value="-object"/>
-    <qemu:arg value="input-linux,id=mouse1,evdev=/dev/input/by-id/usb-Logitech_USB_Receiver-if02-event-mouse"/>
-    <qemu:arg value="-object"/>
-    <qemu:arg value="input-linux,id=kbd1,evdev=/dev/input/by-id/usb-Razer_Razer_Huntsman_Tournament_Edition_00000000001A-event-kbd,grab_all=on,repeat=on"/>
-    <qemu:arg value="-object"/>
-    <qemu:arg value="input-linux,id=kbd2,evdev=/dev/input/by-id/usb-Razer_Razer_Huntsman_Tournament_Edition_00000000001A-if01-event-kbd,grab_all=on,repeat=on"/>
-    <qemu:arg value="-object"/>
-    <qemu:arg value="input-linux,id=mouse2,evdev=/dev/input/by-id/usb-Razer_Razer_Huntsman_Tournament_Edition_00000000001A-if02-event-mouse"/>
+ <qemu:commandline>
+	<qemu:arg value='-object'/>
+	<qemu:arg value='input-linux,id=kbd1,evdev=/dev/input/by-id/usb-Kingston_HyperX_Alloy_Origins_Core-event-kbd,grab_all=on,repeat=on'/>
+	<qemu:arg value='-object'/>
+	<qemu:arg value='input-linux,id=kbd2,evdev=/dev/input/by-id/usb-Kingston_HyperX_Alloy_Origins_Core-if01-event-kbd,grab_all=on,repeat=on'/>
+	<qemu:arg value='-object'/>
+	<qemu:arg value='input-linux,id=mouse1,evdev=/dev/input/by-id/usb-Kingston_HyperX_Alloy_Origins_Core-if01-event-mouse'/>
+	<qemu:arg value='-object'/>
+	<qemu:arg value='input-linux,id=mouse2,evdev=/dev/input/by-id/usb-Logitech_USB_Receiver-if02-event-mouse'/>
   </qemu:commandline>
 </domain>
